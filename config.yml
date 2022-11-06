@@ -1,0 +1,27 @@
+modules:
+  http_2xx:
+    prober: http
+  http_baidu:
+    prober: http
+    http:
+      fail_if_body_not_matches_regexp:
+        - "asdfasdf"
+  atlassian_login:
+    prober: http
+    http:
+      fail_if_body_not_matches_regexp:
+        - "signup"
+  http_post_2xx:
+    prober: http
+    http:
+      method: POST
+  # tcp_connect:
+  #   prober: tcp
+  # pop3s_banner:
+  #   prober: tcp
+  #   tcp:
+  #     query_response:
+  #     - expect: "^+OK"
+  #     tls: true
+  #     tls_config:
+  #       insecure_skip_verify: false

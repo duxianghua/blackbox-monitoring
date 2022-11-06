@@ -1,0 +1,1 @@
+docker run --rm -it -p 9115:9115 -v $(pwd)/config.yml:/opt/bitnami/blackbox-exporter/blackbox.yml bitnami/blackbox-exporter:latest
